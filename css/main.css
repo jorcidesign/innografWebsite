@@ -1,0 +1,12 @@
+/* Variables globales */
+@import 'global/variables.css';
+
+/* Componentes */
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/footer.css';
+
+/* Animaciones */
+@import 'animations/animations.css';
+/* Importar estilos del loader */
+@import 'components/loader.css';

@@ -17,3 +17,14 @@ document.getElementById('burger-menu').addEventListener('click', function () {
   document.getElementById('close-menu').addEventListener('click', function () {
     document.getElementById('mobile-menu').classList.remove('active');
   });
+
+// Espera a que todo el contenido de la página se cargue
+window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    
+    // Asegúrate de que el loader se muestre al menos durante 2 segundos
+    setTimeout(function() {
+      loader.classList.add('hidden');
+    }, 2000); // 2000 ms = 2 segundos
+  });
+  

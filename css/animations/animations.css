@@ -1,0 +1,45 @@
+.logo {
+    margin-right: auto; /* Alinea el logo a la izquierda */
+    display: flex; /* Usamos flexbox para alinear el contenido dentro del logo */
+    align-items: center; /* Alineamos verticalmente el logo al centro */
+  }
+  
+  /* Logo en SVG */
+  .logo-svg {
+    width: 60px; /* Reducimos el tamaño del logo */
+    height: 60px; /* Ajuste proporcional del tamaño */
+    transition: transform 0.5s ease;
+  }
+  
+  .logo:hover .logo-svg {
+    transform: scale(1.1); /* Efecto de agrandar el logo */
+  }
+  
+  /* Cambios de color en el logo */
+  .logo-circle {
+    fill: rgb(255, 0, 0); /* Círculo rojo */
+  }
+  
+  .logo-parallelogram,
+  .logo-triangle-left,
+  .logo-triangle-right {
+    fill: white; /* Cambiamos a blanco los triángulos y el paralelogramo */
+  }
+  
+  /* Nueva animación en hover */
+  .logo:hover .logo-circle,
+  .logo:hover .logo-parallelogram {
+    transform: scale(0.8); /* El círculo y el paralelogramo se hacen más pequeños */
+    transition: transform 0.5s ease; /* Transición suave */
+  }
+  
+  .logo:hover .logo-triangle-left {
+    transform: translateX(-20px); /* Mueve el triángulo izquierdo hacia la izquierda */
+    transition: transform 0.5s ease;
+  }
+  
+  .logo:hover .logo-triangle-right {
+    transform: translateX(20px); /* Mueve el triángulo derecho hacia la derecha */
+    transition: transform 0.5s ease;
+  }
+  
