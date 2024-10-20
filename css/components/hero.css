@@ -13,7 +13,7 @@
   .hero-section {
     height: 100vh;
     flex: 1; /* Esto hace que la sección principal crezca para ocupar el espacio disponible */
-    background-image: url('../../imagenFondo.png');
+    background-image: url('../../public/imagenFondo.png');
     background-size: cover;
     background-position: center;
     display: flex;
