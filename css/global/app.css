@@ -1,0 +1,15 @@
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    /* padding: 0 20px; */
+    margin: 0; /* Asegúrate de que no haya márgenes */
+    box-sizing: border-box; /* Incluye padding dentro del tamaño total */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  

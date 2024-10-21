@@ -1,0 +1,63 @@
+/* transition.css */
+
+/* Para pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+  /* transition.css */
+
+  /* El div de transición cubrirá toda la pantalla */
+  .page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Fondo negro, puedes cambiarlo si lo prefieres */
+    z-index: 1000;
+    transform: translateY(-100%); /* Fuera de la pantalla inicialmente */
+    transition: transform 0.7s ease-in-out; /* Transición suave */
+  }
+
+  /* Cuando se activa, el div baja para cubrir la pantalla */
+  .page-transition.active {
+    transform: translateY(0); /* El telón baja cubriendo toda la pantalla */
+  }
+
+  /* Después de la transición, el telón sube para revelar el contenido */
+  .page-transition.finished {
+    transform: translateY(-100%); /* El telón sube y desaparece */
+  }
+
+  /* Animación de desaparición (fade-out) */
+  .fade-out {
+    animation: fadeOut 0.5s forwards; /* Duración de 0.5s y permanece invisible */
+  }
+
+  /* Animación de aparición (fade-in) */
+  .fade-in {
+    animation: fadeIn 0.5s forwards; /* Duración de 0.5s */
+  }
+
+  /* Definición de la animación de desvanecimiento (fadeOut) */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px); /* Se desvanece y baja un poco */
+    }
+  }
+
+  /* Definición de la animación de aparición (fadeIn) */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Sube un poco y es transparente */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Se coloca en su lugar */
+    }
+  }
+}

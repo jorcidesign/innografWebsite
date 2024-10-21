@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+     <!-- Div de transición tipo telón -->
+     <div class="page-transition"></div>
     <!-- Loader -->
 <div id="loader" class="loader">
   <div class="spinner"></div>
@@ -65,9 +67,8 @@
     
     <!-- Menú de navegación -->
     <ul class="nav-links">
-      <li><a href="#home">Inicio</a></li>
-      <li><a href="#about">Nosotros</a></li>
       <li><a href="#services">Servicios</a></li>
+      <li><a href="#about">Nosotros</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
 
@@ -92,14 +93,13 @@
     </svg>
   </div>
   <ul class="mobile-nav-links">
-    <li><a href="#home">Inicio</a></li>
     <li><a href="#about">Nosotros</a></li>
     <li><a href="#services">Servicios</a></li>
     <li><a href="#contact">Contacto</a></li>
   </ul>
 </div>
 
-    <section id="home" class="hero-section">
+    <!-- <section id="home" class="hero-section">
       <div class="overlay">
         <div class="hero-content">
           <h2>Impresiones de Calidad para tu Empresa</h2>
@@ -110,14 +110,19 @@
           <a href="#about" class="btn-primary">Conoce Más</a>
         </div>
       </div>
-    </section>
+    </section> -->
+
+     <!-- Contenedor para cargar contenido dinámicamente -->
+     <main id="app">
+      <!-- Aquí se cargará el contenido de cada "página" -->
+    </main>
 
     <!-- Más secciones por agregar -->
 
     <footer>
       <p>&copy; 2024 INNOGRAF J Y M SRL. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

@@ -6,6 +6,7 @@ header {
     justify-content: space-between; /* Alinea logo a la izquierda y navegación a la derecha */
     align-items: center;
     height: 80px; /* Ajusta la altura del header */
+    
   }
   
   nav {

@@ -10,3 +10,5 @@
 @import 'animations/animations.css';
 /* Importar estilos del loader */
 @import 'components/loader.css';
+
+@import 'global/app.css';
