@@ -1,15 +1,9 @@
 #app {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-align: center;
-    /* padding: 0 20px; */
-    margin: 0; /* Asegúrate de que no haya márgenes */
-    box-sizing: border-box; /* Incluye padding dentro del tamaño total */
-    position: relative;
-    overflow: hidden;
-  }
-  
-  
+  display: block; /* Cambiamos a block para que se ajuste automáticamente al contenido */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  max-width: 1200px; /* Opcional, limita el ancho máximo si deseas */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+  padding: 20px; /* Añade un pequeño relleno para separación */
+  box-sizing: border-box; /* Mantén el box-sizing para asegurar que el padding no afecte el tamaño total */
+  overflow: visible; /* Asegura que el contenido largo no sea cortado */
+}

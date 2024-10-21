@@ -1,0 +1,20 @@
+.contact-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-details {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-details a {
+    color: #ff0000; /* Cambia a tu color de branding */
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}

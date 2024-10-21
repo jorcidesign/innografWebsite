@@ -102,3 +102,7 @@ window.addEventListener('load', () => {
     addNavbarListeners(); // Añadimos los listeners al navbar
     addMobileMenuListeners(); // Añadimos los listeners al menú móvil
 });
+
+
+
+

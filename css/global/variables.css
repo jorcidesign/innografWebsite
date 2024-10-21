@@ -36,5 +36,7 @@
     flex-direction: column;
   }
   
-  
+  main {
+    flex: 1; /* Esto hace que el contenido crezca para llenar el espacio restante */
+}
   

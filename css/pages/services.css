@@ -1,0 +1,16 @@
+/* Por defecto, el iframe es visible y el enlace de descarga está oculto */
+.pdf-download {
+    display: none;
+  }
+  
+  /* Para pantallas pequeñas (mobile), ocultamos el iframe y mostramos el enlace de descarga */
+  @media (max-width: 768px) {
+    .pdf-iframe {
+      display: none; /* Oculta el iframe en pantallas móviles */
+    }
+  
+    .pdf-download {
+      display: block; /* Muestra el enlace de descarga en pantallas móviles */
+    }
+  }
+  
